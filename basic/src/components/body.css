@@ -1,15 +1,21 @@
 .body{
     display:flex;
     flex-direction: column;
-    border: 2px solid black;
     width: 100%;
     
 }
+
 .upper{
     width: 100%;
     height: 70vh;
-    border: 2px solid green;
     display:flex;
+}
+
+@media(max-width: 700px){
+   .upper{
+       display:flex;
+       height: 60vh;
+   }
 }
 .backgroundImage{
     background-color: royalblue;
@@ -18,20 +24,46 @@
     padding: 5% 0;
     margin: 2.5% 1%;
 }
+
+@media(max-width: 700px){
+   .backgroundImage{
+    width: 45%;
+    padding-left: 5%;
+    background-color: burlywood;
+   }
+}
 .bodyIntro{
     width: 60%;
     display:flex;
     flex-direction:column;
     align-items:center;
 }
+@media(max-width: 700px){
+   .bodyIntro{
+       width: 55%;
+   }
+}
 .upperTitle{
     padding-top: 5%;
+}
+@media(max-width: 700px){
+   .upperTitle{
+       font-size: 1.4rem;
+       font-weight: bold;
+   }
 }
 .upperText{
     font-size: 1.2rem;
     padding: 0 2%;
     margin: 0 auto;
     font-weight: bold;
+}
+@media(max-width: 700px){
+   .upperText{
+    font-size: 1rem;
+    padding: 0 2%;
+    margin: 0 auto;
+   }
 }
 .upperAbout{
     padding-top: 4%;
@@ -47,11 +79,24 @@
     width: 200px;
     height: 30px;
     color:white;
+    background-color: rgb(65, 214, 225);
+    cursor:pointer;
+    border-radius: 8px;
+    text-shadow:2px 2px black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media(max-width:700px){
+    .upperButton{
+    width: 200px;
+    height: 30px;
+    color:white;
     background-color: royalblue;
     cursor:pointer;
     border-radius: 8px;
     text-shadow:2px 2px black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
 }
 .middle{
     display:flex; 
@@ -64,11 +109,25 @@
     border: 2px solid black;
     padding: 0 2%;
 }
+
 .personImage{
     border-radius: 50%;
     width: 100px;
     height:100px;
     padding-top: 2%;
+}
+@media(max-width:700px){
+    .personImage{
+        width:75px;
+        height:75px;
+    }
+    .hMI{
+        font-size: 1rem;
+        font-weight:bold;
+    }
+    .pMI{
+        font-size:.9rem;
+    }
 }
 
 .lower{
@@ -76,6 +135,13 @@
     height: 80vh;
     display:flex;
 
+}
+@media(max-width:700px){
+    .lower{
+        display:flex;
+        flex-direction:column-reverse;
+        width: 100%;
+    }
 }
 .lowerLeft{
     width: 40%;
@@ -95,5 +161,26 @@
     width: 60%;
     background-color: rgb(2, 202, 142);
     padding: 5% 0;
-    margin: 2.5% 1%;
+    margin: 2.5% 0;
+}
+
+@media(max-width:700px){
+    .lowerRight{
+        width: 100%;
+        height: 60vh;
+    }
+    .lowerLeft{
+        display:flex;
+        width: 90%;
+        margin:0 auto;
+        padding: 5% 0;
+    }
+    .lowerLeftFirst{
+        width: 50%;
+        margin:0 auto;
+    }
+    .lowerLeftSecond{
+        width: 50%;
+        margin:0 auto;
+    }
 }
